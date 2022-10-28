@@ -1,0 +1,275 @@
+
+Stoopdoop.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000004  00800200  00000170  000001e4  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000170  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  000001e8  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000218  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000060  00000000  00000000  00000258  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000ebe  00000000  00000000  000002b8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000cf1  00000000  00000000  00001176  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000004c8  00000000  00000000  00001e67  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  0000006c  00000000  00000000  00002330  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000601  00000000  00000000  0000239c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000116  00000000  00000000  0000299d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000030  00000000  00000000  00002ab3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	71 c0       	rjmp	.+226    	; 0xe4 <__ctors_end>
+   2:	00 00       	nop
+   4:	86 c0       	rjmp	.+268    	; 0x112 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	84 c0       	rjmp	.+264    	; 0x112 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	82 c0       	rjmp	.+260    	; 0x112 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	80 c0       	rjmp	.+256    	; 0x112 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	7e c0       	rjmp	.+252    	; 0x112 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	7c c0       	rjmp	.+248    	; 0x112 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	7a c0       	rjmp	.+244    	; 0x112 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	78 c0       	rjmp	.+240    	; 0x112 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	76 c0       	rjmp	.+236    	; 0x112 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	74 c0       	rjmp	.+232    	; 0x112 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	72 c0       	rjmp	.+228    	; 0x112 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	70 c0       	rjmp	.+224    	; 0x112 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	6e c0       	rjmp	.+220    	; 0x112 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	6c c0       	rjmp	.+216    	; 0x112 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	6a c0       	rjmp	.+212    	; 0x112 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	68 c0       	rjmp	.+208    	; 0x112 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	66 c0       	rjmp	.+204    	; 0x112 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	64 c0       	rjmp	.+200    	; 0x112 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	62 c0       	rjmp	.+196    	; 0x112 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	60 c0       	rjmp	.+192    	; 0x112 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	5e c0       	rjmp	.+188    	; 0x112 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	5c c0       	rjmp	.+184    	; 0x112 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	5a c0       	rjmp	.+180    	; 0x112 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	58 c0       	rjmp	.+176    	; 0x112 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	56 c0       	rjmp	.+172    	; 0x112 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	54 c0       	rjmp	.+168    	; 0x112 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	52 c0       	rjmp	.+164    	; 0x112 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	50 c0       	rjmp	.+160    	; 0x112 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	4e c0       	rjmp	.+156    	; 0x112 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	4c c0       	rjmp	.+152    	; 0x112 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	4a c0       	rjmp	.+148    	; 0x112 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	48 c0       	rjmp	.+144    	; 0x112 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	46 c0       	rjmp	.+140    	; 0x112 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	44 c0       	rjmp	.+136    	; 0x112 <__bad_interrupt>
+  8a:	00 00       	nop
+  8c:	42 c0       	rjmp	.+132    	; 0x112 <__bad_interrupt>
+  8e:	00 00       	nop
+  90:	40 c0       	rjmp	.+128    	; 0x112 <__bad_interrupt>
+  92:	00 00       	nop
+  94:	3e c0       	rjmp	.+124    	; 0x112 <__bad_interrupt>
+  96:	00 00       	nop
+  98:	3c c0       	rjmp	.+120    	; 0x112 <__bad_interrupt>
+  9a:	00 00       	nop
+  9c:	3a c0       	rjmp	.+116    	; 0x112 <__bad_interrupt>
+  9e:	00 00       	nop
+  a0:	38 c0       	rjmp	.+112    	; 0x112 <__bad_interrupt>
+  a2:	00 00       	nop
+  a4:	36 c0       	rjmp	.+108    	; 0x112 <__bad_interrupt>
+  a6:	00 00       	nop
+  a8:	34 c0       	rjmp	.+104    	; 0x112 <__bad_interrupt>
+  aa:	00 00       	nop
+  ac:	32 c0       	rjmp	.+100    	; 0x112 <__bad_interrupt>
+  ae:	00 00       	nop
+  b0:	30 c0       	rjmp	.+96     	; 0x112 <__bad_interrupt>
+  b2:	00 00       	nop
+  b4:	2e c0       	rjmp	.+92     	; 0x112 <__bad_interrupt>
+  b6:	00 00       	nop
+  b8:	2c c0       	rjmp	.+88     	; 0x112 <__bad_interrupt>
+  ba:	00 00       	nop
+  bc:	2a c0       	rjmp	.+84     	; 0x112 <__bad_interrupt>
+  be:	00 00       	nop
+  c0:	28 c0       	rjmp	.+80     	; 0x112 <__bad_interrupt>
+  c2:	00 00       	nop
+  c4:	26 c0       	rjmp	.+76     	; 0x112 <__bad_interrupt>
+  c6:	00 00       	nop
+  c8:	24 c0       	rjmp	.+72     	; 0x112 <__bad_interrupt>
+  ca:	00 00       	nop
+  cc:	22 c0       	rjmp	.+68     	; 0x112 <__bad_interrupt>
+  ce:	00 00       	nop
+  d0:	20 c0       	rjmp	.+64     	; 0x112 <__bad_interrupt>
+  d2:	00 00       	nop
+  d4:	1e c0       	rjmp	.+60     	; 0x112 <__bad_interrupt>
+  d6:	00 00       	nop
+  d8:	1c c0       	rjmp	.+56     	; 0x112 <__bad_interrupt>
+  da:	00 00       	nop
+  dc:	1a c0       	rjmp	.+52     	; 0x112 <__bad_interrupt>
+  de:	00 00       	nop
+  e0:	18 c0       	rjmp	.+48     	; 0x112 <__bad_interrupt>
+	...
+
+000000e4 <__ctors_end>:
+  e4:	11 24       	eor	r1, r1
+  e6:	1f be       	out	0x3f, r1	; 63
+  e8:	cf ef       	ldi	r28, 0xFF	; 255
+  ea:	d1 e2       	ldi	r29, 0x21	; 33
+  ec:	de bf       	out	0x3e, r29	; 62
+  ee:	cd bf       	out	0x3d, r28	; 61
+  f0:	00 e0       	ldi	r16, 0x00	; 0
+  f2:	0c bf       	out	0x3c, r16	; 60
+
+000000f4 <__do_copy_data>:
+  f4:	12 e0       	ldi	r17, 0x02	; 2
+  f6:	a0 e0       	ldi	r26, 0x00	; 0
+  f8:	b2 e0       	ldi	r27, 0x02	; 2
+  fa:	e0 e7       	ldi	r30, 0x70	; 112
+  fc:	f1 e0       	ldi	r31, 0x01	; 1
+  fe:	00 e0       	ldi	r16, 0x00	; 0
+ 100:	0b bf       	out	0x3b, r16	; 59
+ 102:	02 c0       	rjmp	.+4      	; 0x108 <__do_copy_data+0x14>
+ 104:	07 90       	elpm	r0, Z+
+ 106:	0d 92       	st	X+, r0
+ 108:	a4 30       	cpi	r26, 0x04	; 4
+ 10a:	b1 07       	cpc	r27, r17
+ 10c:	d9 f7       	brne	.-10     	; 0x104 <__do_copy_data+0x10>
+ 10e:	08 d0       	rcall	.+16     	; 0x120 <main>
+ 110:	2d c0       	rjmp	.+90     	; 0x16c <_exit>
+
+00000112 <__bad_interrupt>:
+ 112:	76 cf       	rjmp	.-276    	; 0x0 <__vectors>
+
+00000114 <io_init>:
+ 114:	11 b8       	out	0x01, r1	; 1
+ 116:	8f ef       	ldi	r24, 0xFF	; 255
+ 118:	82 b9       	out	0x02, r24	; 2
+ 11a:	87 b9       	out	0x07, r24	; 7
+ 11c:	88 b9       	out	0x08, r24	; 8
+ 11e:	08 95       	ret
+
+00000120 <main>:
+#include "io_ports.h" 
+//#include "io_ports.c"
+//#include "stepper.c"
+
+int main(void)
+{
+ 120:	f9 df       	rcall	.-14     	; 0x114 <io_init>
+ 122:	80 b1       	in	r24, 0x00	; 0
+ 124:	90 e0       	ldi	r25, 0x00	; 0
+ 126:	80 95       	com	r24
+ 128:	90 95       	com	r25
+ 12a:	87 70       	andi	r24, 0x07	; 7
+ 12c:	99 27       	eor	r25, r25
+ 12e:	01 97       	sbiw	r24, 0x01	; 1
+ 130:	11 f4       	brne	.+4      	; 0x136 <main+0x16>
+ 132:	87 e5       	ldi	r24, 0x57	; 87
+ 134:	02 d0       	rcall	.+4      	; 0x13a <Stepper_Position>
+ 136:	18 b8       	out	0x08, r1	; 8
+ 138:	f4 cf       	rjmp	.-24     	; 0x122 <main+0x2>
+
+0000013a <Stepper_Position>:
+//}
+
+void Stepper_Position(char mode)
+{
+		uint16_t degree;
+		switch (mode)
+ 13a:	87 35       	cpi	r24, 0x57	; 87
+ 13c:	81 f0       	breq	.+32     	; 0x15e <Stepper_Position+0x24>
+ 13e:	08 95       	ret
+			//you need to calculate the steps needed for each revolution
+			for(uint16_t i = 0; i< degree; i++) //loop thru array # of times
+			{
+				for(uint16_t j = 0; j< 4; j++) //loop thru the whole array
+				{
+					PORTC = Wave[j];
+ 140:	81 91       	ld	r24, Z+
+ 142:	88 b9       	out	0x08, r24	; 8
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 144:	8f ed       	ldi	r24, 0xDF	; 223
+ 146:	9e e2       	ldi	r25, 0x2E	; 46
+ 148:	01 97       	sbiw	r24, 0x01	; 1
+ 14a:	f1 f7       	brne	.-4      	; 0x148 <Stepper_Position+0xe>
+ 14c:	00 c0       	rjmp	.+0      	; 0x14e <Stepper_Position+0x14>
+ 14e:	00 00       	nop
+			degree = 84;
+			//4 elements
+			//you need to calculate the steps needed for each revolution
+			for(uint16_t i = 0; i< degree; i++) //loop thru array # of times
+			{
+				for(uint16_t j = 0; j< 4; j++) //loop thru the whole array
+ 150:	e2 17       	cp	r30, r18
+ 152:	f3 07       	cpc	r31, r19
+ 154:	a9 f7       	brne	.-22     	; 0x140 <Stepper_Position+0x6>
+ 156:	41 50       	subi	r20, 0x01	; 1
+ 158:	51 09       	sbc	r21, r1
+		{
+			case 'W':
+			degree = 84;
+			//4 elements
+			//you need to calculate the steps needed for each revolution
+			for(uint16_t i = 0; i< degree; i++) //loop thru array # of times
+ 15a:	29 f4       	brne	.+10     	; 0x166 <Stepper_Position+0x2c>
+ 15c:	08 95       	ret
+//}
+
+void Stepper_Position(char mode)
+{
+		uint16_t degree;
+		switch (mode)
+ 15e:	44 e5       	ldi	r20, 0x54	; 84
+ 160:	50 e0       	ldi	r21, 0x00	; 0
+ 162:	24 e0       	ldi	r18, 0x04	; 4
+ 164:	32 e0       	ldi	r19, 0x02	; 2
+ 166:	e0 e0       	ldi	r30, 0x00	; 0
+ 168:	f2 e0       	ldi	r31, 0x02	; 2
+ 16a:	ea cf       	rjmp	.-44     	; 0x140 <Stepper_Position+0x6>
+
+0000016c <_exit>:
+ 16c:	f8 94       	cli
+
+0000016e <__stop_program>:
+ 16e:	ff cf       	rjmp	.-2      	; 0x16e <__stop_program>
